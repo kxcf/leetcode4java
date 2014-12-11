@@ -62,3 +62,4 @@ $RECYCLE.BIN/
 # Idea project files
 *.iml
 .idea/
+out/
