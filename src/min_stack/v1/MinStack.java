@@ -1,6 +1,6 @@
-package min_stack;
+package min_stack.v1;
 
-class MinStack2 {
+class MinStack {
 	private java.util.Stack<Integer> normal = new java.util.Stack<>();
 	private java.util.Stack<Integer> min = new java.util.Stack<>();
 

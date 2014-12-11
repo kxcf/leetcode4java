@@ -5,6 +5,6 @@ https://oj.leetcode.com/problems/min-stack/
 
 O(n) time complexity, O(n) space complexity.
  
-MinStack.java(464 ms time cost):	Use single Long-class stack.
+min_stack.v1.MinStack(464 ms time cost):	Use double Integer-class stack with space optimization.
 
-MinStack2.java(464 ms time cost):	Use double Integer-class stack with space optimization.
+min_stack.v2.MinStack2(464 ms time cost):	Use single Long-class stack.

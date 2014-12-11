@@ -1,4 +1,4 @@
-package min_stack;
+package min_stack.v2;
 
 class MinStack {
 	private java.util.Stack<Long> stack = new java.util.Stack<>();
