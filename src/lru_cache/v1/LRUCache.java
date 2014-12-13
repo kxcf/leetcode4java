@@ -30,7 +30,7 @@ public class LRUCache {
 				node = this.list.removeLast();
 				this.map.remove(node.getKey());
 			} else {
-				node = this.list.createNode();
+				node = this.list.new ListNode();
 			}
 			this.map.put(key, node);
 		} else {
@@ -79,10 +79,6 @@ class DoubleList<K, V> {
 		next.prev = node;
 		this.head.next = node;
 		this.size++;
-	}
-
-	public ListNode createNode() {
-		return new ListNode();
 	}
 
 	class ListNode {
