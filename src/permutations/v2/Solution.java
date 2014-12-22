@@ -1,4 +1,4 @@
-package permutations;
+package permutations.v2;
 
 import java.util.*;
 
