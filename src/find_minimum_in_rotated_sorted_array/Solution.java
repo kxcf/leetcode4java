@@ -4,7 +4,7 @@ public class Solution {
 	public int findMin(int[] num) {
 		int left = 0, right = num.length - 1;
 		while (left < right) {
-			int mid = (left + right) >> 1;
+			int mid = (left + right) >>> 1;
 			//left<=mid<right
 			if (num[mid] > num[right]) {
 				left = mid + 1;
