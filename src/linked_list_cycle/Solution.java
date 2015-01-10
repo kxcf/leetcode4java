@@ -1,0 +1,24 @@
+package linked_list_cycle;
+
+class ListNode {
+	int val;
+	ListNode next;
+
+	ListNode(int x) {
+		val = x;
+		next = null;
+	}
+}
+
+public class Solution {
+	public boolean hasCycle(ListNode head) {
+		for (ListNode slow = head, fast = head; fast != null && fast.next != null; ) {
+			slow = slow.next;
+			fast = fast.next.next;
+			if (fast == slow) {
+				return true;
+			}
+		}
+		return false;
+	}
+}
