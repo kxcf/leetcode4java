@@ -1,8 +1,11 @@
 package min_stack.v1;
 
+import java.util.Deque;
+import java.util.LinkedList;
+
 class MinStack {
-	private java.util.Stack<Integer> normal = new java.util.Stack<>();
-	private java.util.Stack<Integer> min = new java.util.Stack<>();
+	private Deque<Integer> normal = new LinkedList<>();
+	private Deque<Integer> min = new LinkedList<>();
 
 	public void push(int x) {
 		this.normal.push(x);

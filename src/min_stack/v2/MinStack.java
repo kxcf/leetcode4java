@@ -1,7 +1,10 @@
 package min_stack.v2;
 
+import java.util.Deque;
+import java.util.LinkedList;
+
 class MinStack {
-	private java.util.Stack<Long> stack = new java.util.Stack<>();
+	private Deque<Long> stack = new LinkedList<>();
 	private long min;
 
 	public void push(int x) {
